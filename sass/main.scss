@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto-regular.ttf') format('truetype');
+  font-family: "Roboto-bold";
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-family: "Deja Vu Sans";
+  src: url('../fonts/DejaVuSans.ttf') format('truetype');
+  font-family: "Hitch Hike";
+  src: url('../fonts/Hitch-hike.otf') format('otf');
+}
+header {
+  p {
+    font-size: 230px;
+    color: rgb(255,255,255);
+    font-family: "Hitch Hike";
+  }
+  h1 {
+    font-size: 24px;
+    color: rgb(0,0,0);
+    font-family: "Deja Vu Sans", sans-serif;
+  }
+}
