@@ -1,3 +1,8 @@
+$font-roboto: 'Roboto', sans-serif;
+
+@import "mixin";
+@import "normalize";
+
 @font-face {
   font-family: "Roboto";
   src: url('../fonts/Roboto-regular.ttf') format('truetype');
@@ -8,15 +13,60 @@
   font-family: "Hitch Hike";
   src: url('../fonts/Hitch-hike.otf') format('otf');
 }
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li{
+  display: inline-block;
+}
+
 header {
-  p {
-    font-size: 230px;
+  font-family: $font-roboto;
+  .contacts {
+    background-color: #4b4b4b;
+    padding: 20px 20%;
+    span {
+      font-size: 16px;
+      line-height: 18px;
+      color: rgb(255,255,255);
+    }
+  }
+  .menu {
+    .logo {
+      padding-left: 19.5%;
+      display: inline-block;
+      img {
+        max-height: 70px;
+      }
+    }
+    ul {
+      display: inline-block;
+    }
+  }
+  .banner {
+    text-transform: uppercase;
+    background: url("../img/bg_header.png") no-repeat;
+    background-size: cover;
     color: rgb(255,255,255);
-    font-family: "Hitch Hike";
+    h2 {
+      font-size: 230px;
+      font-family: "Hitch Hike";
+    }
+    p {
+      font-size: 40px;
+    }
   }
-  h1 {
-    font-size: 24px;
-    color: rgb(0,0,0);
-    font-family: "Deja Vu Sans", sans-serif;
-  }
+
 }
