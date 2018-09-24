@@ -11,11 +11,14 @@ $font-roboto: 'Roboto', sans-serif;
   font-family: "Deja Vu Sans";
   src: url('../fonts/DejaVuSans.ttf') format('truetype');
   font-family: "Hitch Hike";
-  src: url('../fonts/Hitch-hike.otf') format('otf');
+  src: url('../fonts/Hitchhike.ttf') format('truetype');
 }
 
 * {
-  box-sizing: border-box;
+  font-family: $font-roboto;
+}
+.container-fluid {
+ max-width: 1200px;
 }
 
 a {
@@ -33,10 +36,9 @@ li{
 }
 
 header {
-  font-family: $font-roboto;
+
   .contacts {
     background-color: #4b4b4b;
-    padding: 20px 20%;
     span {
       font-size: 16px;
       line-height: 18px;
@@ -44,15 +46,21 @@ header {
     }
   }
   .menu {
+    background-color: #47d0cc;
+    min-height: 80px;
     .logo {
-      padding-left: 19.5%;
       display: inline-block;
+      padding: 0;
       img {
         max-height: 70px;
       }
     }
-    ul {
-      display: inline-block;
+    li {
+      line-height: 80px;
+      font-size: 20px;
+      color: rgb(255,255,255);
+      //font-family: $font-roboto;
+      font-weight: bold;
     }
   }
   .banner {
@@ -60,6 +68,7 @@ header {
     background: url("../img/bg_header.png") no-repeat;
     background-size: cover;
     color: rgb(255,255,255);
+    padding: 170px 0 95px;
     h2 {
       font-size: 230px;
       font-family: "Hitch Hike";
@@ -67,6 +76,101 @@ header {
     p {
       font-size: 40px;
     }
+    a {
+      width: 200px;
+      height: 67px;
+      display: block;
+      box-shadow: 5px 8.66px 1px rgba(34,31,31,0.15);
+      background-color: #f5cd15;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 67px;
+      color: rgb(0,0,0);
+      //font-family: $font-roboto;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto;
+      &:hover {
+        background-color: #47cfcb;
+        color: rgb(255,255,255);
+        text-decoration: none;
+      }
+    }
   }
+}
+.advantages {
 
+}
+.statistic {
+  //font-family: $font-roboto;
+  color: rgb(118,116,116);
+  text-align: center;
+  background-image: url("../img/bg_statistic.png");
+  background-size: cover;
+  p.num {
+    font-size: 60px;
+    color: rgb(75,75,75);
+    font-weight: bold;
+  }
+  p.text {
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+.hotels {
+  text-align: center;
+  background: url("../img/bg_hotels.png") no-repeat;
+  background-size: cover;
+  .row .col-sm-4 {
+    background-color: white;
+  }
+  div {
+    text-align: center;
+  }
+  h2 {
+    font-size: 36px;
+    color: rgb(28,196,191);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .line {
+    width: 200px;
+    height: 1px;
+    background-color: #f5cd15;
+    border: 1px solid #f9ad13;
+    font-size: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  span {
+    font-size: 24px;
+    color: rgb(228,156,14);
+  }
+  .stars {
+    i {
+      font-size: 18px;
+      line-height: 24px;
+      color: #f9ab14;
+    }
+  }
+  img {height: 250px}
+  a {
+    width: 167px;
+    height: 40px;
+    box-shadow: 3.5px 6.062px 1px rgba(34,31,31,0.15);
+    background-color: #f5cd15;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: rgb(0,0,0);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    &:hover {
+      background-color: #47cfcb;
+      color: rgb(255,255,255);
+      text-decoration: none;
+    }
+  }
 }
