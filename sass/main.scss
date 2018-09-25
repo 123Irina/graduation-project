@@ -38,10 +38,20 @@ h2 {
   font-size: 36px;
   color: rgb(28,196,191);
   text-align: center;
+  border-bottom: 2px dashed #f5cd15;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  padding: 0;
+  img {
+    max-height: 70px;
+  }
 }
 
 header {
-
   .contacts {
     background-color: #4b4b4b;
     span {
@@ -53,13 +63,7 @@ header {
   .menu {
     background-color: #47d0cc;
     min-height: 80px;
-    .logo {
-      display: inline-block;
-      padding: 0;
-      img {
-        max-height: 70px;
-      }
-    }
+
     li {
       line-height: 80px;
       font-size: 20px;
@@ -74,7 +78,7 @@ header {
     background-size: cover;
     color: rgb(255,255,255);
     padding: 170px 0 95px;
-    h2 {
+    h4 {
       font-size: 230px;
       font-family: "Hitch Hike";
       color: rgb(255,255,255);
@@ -92,7 +96,6 @@ header {
       letter-spacing: 2px;
       line-height: 67px;
       color: rgb(0,0,0);
-      //font-family: $font-roboto;
       font-weight: bold;
       text-align: center;
       margin: 0 auto;
@@ -108,7 +111,6 @@ header {
 
 }
 .statistic {
-  //font-family: $font-roboto;
   color: rgb(118,116,116);
   text-align: center;
   background-image: url("../img/bg_statistic.png");
@@ -138,15 +140,6 @@ header {
     color: rgb(28,196,191);
     text-align: center;
     text-transform: uppercase;
-  }
-  .line {
-    width: 200px;
-    height: 1px;
-    background-color: #f5cd15;
-    border: 1px solid #f9ad13;
-    font-size: 0;
-    display: block;
-    margin: 0 auto;
   }
   span {
     font-size: 24px;
@@ -205,8 +198,98 @@ header {
   }
 }
 .company {
-  h2 {
-    line-height: 48px;
-    color: rgb(132,110,10);
+  text-align: right;
+  background-image: url("../img/bg_company_foto.jpg");
+  background-size: cover;
+  .target {
+    width: 60%;
+    text-align: center;
+    margin-left: 40%;
+    padding: 50px 60px 50px 0;
+    background-image: url("../img/yellow_white.png");
+    background-size: cover;
+    h2 {
+      line-height: 48px;
+      color: rgb(132,110,10);
+      margin-left: 30%;
+    }
+    p {
+      font-size: 30px;
+      line-height: 36px;
+      color: rgb(140,78,11);
+      text-align: center;
+      margin-left: 20%;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      margin-left: 50%;
+      width: 200px;
+      height: 55px;
+      box-shadow: 3.5px 6.062px 1px rgba(34,31,31,0.15);
+      background-color: #fbedaf;
+      font-size: 18px;
+      letter-spacing: 2px;
+      line-height: 55px;
+      color: rgb(0,0,0);
+      text-align: center;
+      &:hover {
+        background-color: #47cfcb;
+        color: rgb(255,255,255);
+        text-decoration: none;
+      }
+    }
   }
+}
+footer {
+  text-align: center;
+  background-color: #73c1bf;
+  .logo {
+    p {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(25, 77, 76);
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #407978;
+      i {
+        font-size: 35px;
+        line-height: 35px;
+      }
+    }
+  }
+  .adress {
+    p {
+      font-size: 24px;
+      color: rgb(64,121,120);
+    }
+    #map {
+      width: 330px;
+      height: 234px;
+      background-color: #ffffff;
+    }
+  }
+  .form {
+    text-align: center;
+    h5 {
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: rgb(0,0,0);
+    }
+    p {
+      font-size: 16px;
+      line-height: 18px;
+      color: rgb(118,116,116);
+    }
+  }
+}
+.copyright{
+  height: 85px;
+  line-height: 85px;
+  background-color: #3e3e3e;
+  font-size: 24px;
+  color: rgb(118,118,118);
+  text-align: center;
 }
