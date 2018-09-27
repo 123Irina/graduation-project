@@ -146,12 +146,19 @@ header {
     }
   }
 }
+.img_round {
+  img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+  }
+}
 .advantages {
   padding: 0;
-  .carousel-control {
-    background: white;
-    color: #47cfcb;
-  }
+  //.carousel-control {
+  //  background: white;
+  //  color: #47cfcb;
+  //}
   .carousel-indicators{
     li {
       border: 1px solid #47cfcb;
