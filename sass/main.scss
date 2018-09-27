@@ -307,6 +307,50 @@ header {
     padding: 50px 60px 50px 0;
     background-image: url("../img/yellow_white.png");
     background-size: cover;
+    .modal-content {
+      max-width: 475px;
+    }
+    .ask-call {
+      padding: 25px 45px 45px;
+      form {
+        text-align: left;
+        input {
+          border: 1px solid #47cfcb;
+          color: #000000;
+          &:hover {
+            box-shadow: 3.5px 6.062px 1px rgba(71,207,203,0.15);
+          }
+        }
+      }
+      h5 {
+        font-size: 24px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #767474;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      button {
+        margin: 0 auto;
+        width: 170px;
+        height: 40px;
+        background-color: #f9d166;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+      label {
+        font-size: 12px;
+        line-height: 23px;
+        color: #082a98;
+      }
+    }
     h2 {
       line-height: 48px;
       color: rgb(132,110,10);
@@ -314,7 +358,7 @@ header {
       margin-bottom: 30px;
       border: none;
     }
-    p {
+    .main-text {
       font-size: 30px;
       line-height: 36px;
       color: rgb(140,78,11);
@@ -322,8 +366,9 @@ header {
       margin-left: 20%;
       margin-bottom: 30px;
     }
-    a {
-      text-decoration: none;
+    button {
+      outline: none;
+      border: none;
       display: block;
       margin-left: 50%;
       width: 200px;
@@ -332,13 +377,13 @@ header {
       background-color: #fbedaf;
       font-size: 18px;
       letter-spacing: 2px;
-      line-height: 55px;
+      line-height: 38px;
       color: rgb(0,0,0);
       text-align: center;
       &:hover {
         background-color: #47cfcb;
         color: rgb(255,255,255);
-        text-decoration: none;
+        //text-decoration: none;
       }
     }
   }
@@ -462,10 +507,10 @@ footer {
 @media all and (max-width: 1565px){
   .company .target {
     h2 {
-        margin-left: 40%;
+      margin-left: 40%;
       font-size: 32px;
       }
-    p {
+    .main-text {
       margin-left: 30%;
       font-size: 25px;
     }
@@ -502,7 +547,7 @@ footer {
       background-color: #fcd72a;
       background-image: none;
       padding: 15px;
-      h2, p, a {
+      h2, .main-text, a {
         margin: 0 auto 30px;
       }
     }

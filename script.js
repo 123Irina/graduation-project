@@ -38,6 +38,10 @@ $(document).ready(function(){
     }
     loadMap();
 
+    // Modal
+
+
+
     //Isotop
     // $('.button-group button').click(function () {
     //     $('.hidden').removeClass("hidden");
