@@ -544,9 +544,25 @@ header {
   .in-col {
     height: 450px;
     text-align: left;
+    .text_news {
+      font-size: 14px;
+      line-height: 18px;
+      color: #767474;
+    }
+    h5 {
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+    }
+    .data {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #000000;
+    }
   }
 }
-#.modalOpenNews {
+#modalOpenNews {
    display: none;
    position: fixed;
    top: 0;
@@ -555,20 +571,28 @@ header {
    right: 0;
    background-color: rgba(209, 209, 209, 0.9);
    .modal-body {
-     max-width: 70%;
+     max-width: 80%;
+     max-height: 90vh;
+     overflow-y: scroll;
      position: absolute;
-     top: 50%;
+     top: 10px;
      left: 50%;
-     transform: translate(-50%, -50%);
+     transform: translate(-50%, 0);
      border: 2px solid gray;
-     background: lightgrey;
+     background: white;
      padding: 30px;
      h2 {
-     border: none;
+       border: none;
+       margin-bottom: 30px;
+       font-size: 20px;
      }
      p {
        font-size: 14px;
-       text-align: center;
+       margin-bottom: 30px;
+     }
+     #newsData {
+       font-style: italic;
+       font-weight: bold;
      }
    }
  }
