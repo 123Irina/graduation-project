@@ -40,16 +40,25 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <div class="row">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="menu_tours" target="_blank">Экскурсионные туры</a></li>
-                        <li><a href="#hotTours" id="menu_countries" target="_blank">Города</a></li>
-                        <li><a href="#" id="menu_services" target="_blank">Услуги</a></li>
+                        <li><a href="#hotTours" id="menu_tours" target="_blank">Экскурсионные туры</a></li>
+                        <li><a href="#" id="menu_countries" target="_blank">Страны</a></li>
+                        <li>
+                            <a href="#" id="menu_services" class="dropdown-toggle" data-toggle="dropdown" target="_blank">Услуги</a>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">оформление загранпаспорта</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">оформление виз</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">поиск работы в польше</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">гудлайн и тревелсим</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">Tax-free и Duty-free</button></li>
+                            </ul>
+                        </li>
                         <li><a href="#news" id="menu_news" target="_blank">Новости</a></li>
                         <li><a href="#contacts" id="menu_contacts" target="_blank">Контакты</a></li>
                     </ul>
                 </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <div class="banner">
         <div class="container-fluid">
             <p>откройте для себя</p>
@@ -59,22 +68,23 @@
                 </div>
             </div>
             <button type="button" class="btn btn-info modalBanner" data-toggle="modal" data-target="#myModal">ПОДРОБНЕЕ</button>
-
-            <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg">
-
-                    <!-- Modal content-->
                     <div class="modal-content dispatch">
                             <button type="button" class="close" data-dismiss="modal">
                                 <img src="img/iconmonstr-x-mark-7-240.png" height="55" width="55" alt="close"/>
                             </button>
                         <div class="modal-body">
                             <h6 class="modal-title">Подписка</h6>
-                            <p>подписка а нашу рассылку</p>
+                            <p>подписка на нашу рассылку</p>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="mail" placeholder="E-mail">
+                                </div>
+                                <button type="submit">подписаться</button>
+                            </form>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -503,25 +513,27 @@
 
 <!--modal windows-->
 
-<div class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+<div class="modal fade bs-dropdownMenuItem-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Modal title</h4>
+            <div class="ask-call form">
+                <h5>Отправьте запрос</h5>
+                <p>и наши менеджеры проведут полную консультацию</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputYourName" placeholder="Имя">
+                        <label for="InputYourName">Как к Вам обращаться</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputTel" placeholder="Телефон">
+                        <label for="InputTel">Для проведения детальной консультации</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
-            <div class="modal-body">
-                <p>One fine body&hellip;</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

@@ -2,7 +2,7 @@ $(document).ready(function(){
     'use strict';
     //    low scroll
 
-    var $anchors = $('a[href^="#"]');
+    var $anchors = $('a');
     var $button = $ ('button');
     $button.click(function (e) {
         e.preventDefault();
