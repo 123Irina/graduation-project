@@ -76,8 +76,7 @@ div.img_round {
   }
 }
 .dropdown-menu {
-  width: 203px;
-  height: 140px;
+  width: 273px;
   box-shadow: 4px 6.928px 3px rgba(0,0,0,0.14);
   background-color: #ffffff;
   padding: 10px;
@@ -97,6 +96,33 @@ div.img_round {
     &:hover {
       color: #00aef3;
       border-bottom: 1px solid #00aef3;
+    }
+  }
+}
+.img-fixed-height {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  border: 0.5px solid lightgray;
+}
+.countries {
+  li {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .row-flag {
+    .country-flag {
+      display: inline-block;
+      width: 45%;
+      height: 25px;
+      span {
+        font-size: 10px;
+        line-height: 25px;
+        color: #051241;
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -520,6 +546,32 @@ header {
     text-align: left;
   }
 }
+#.modalOpenNews {
+   display: none;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(209, 209, 209, 0.9);
+   .modal-body {
+     max-width: 70%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: 2px solid gray;
+     background: lightgrey;
+     padding: 30px;
+     h2 {
+     border: none;
+     }
+     p {
+       font-size: 14px;
+       text-align: center;
+     }
+   }
+ }
 footer {
   text-align: center;
   background-color: #73c1bf;

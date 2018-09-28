@@ -36,20 +36,72 @@
                     <img src="img/logo_all.png" alt=""/>
                 </div>
             </div>
-
             <div class="collapse navbar-collapse" id="myNavbar">
                 <div class="row">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#hotTours" id="menu_tours" target="_blank">Экскурсионные туры</a></li>
-                        <li><a href="#" id="menu_countries" target="_blank">Страны</a></li>
+                        <li>
+                            <a href="#" id="menu_countries" class="dropdown-toggle" data-toggle="dropdown" target="_blank">Страны</a>
+                            <ul class="dropdown-menu countries">
+                                <li>
+                                    <div class="row-flag">
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_turkey.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>турция</span>
+                                        </div>
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_bulgary.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>болгария</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row-flag">
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_egypt.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>египт</span>
+                                        </div>
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_montenegro.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>черногория</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row-flag">
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_greece.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>греция</span>
+                                        </div>
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_spain.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>испания</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row-flag">
+                                        <div class="country-flag">
+                                            <img src="img/Flag_Nation_emirates.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>оаэ</span>
+                                        </div>
+                                        <div class="country-flag">
+                                            <img src="img/Ensign_Flag.jpg" class="img-fixed-height" alt="flag"/>
+                                            <span>шри-ланка</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li>
                             <a href="#" id="menu_services" class="dropdown-toggle" data-toggle="dropdown" target="_blank">Услуги</a>
                             <ul class="dropdown-menu">
                                 <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">оформление загранпаспорта</button></li>
-                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">оформление виз</button></li>
-                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">поиск работы в польше</button></li>
-                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">гудлайн и тревелсим</button></li>
-                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-example-modal-sm">Tax-free и Duty-free</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">оформление виз</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">поиск работы в польше</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">гудлайн и тревелсим</button></li>
+                                <li><button class="dropdownMenuItem" data-toggle="modal" data-target=".bs-dropdownMenuItem-modal-sm">Tax-free и Duty-free</button></li>
                             </ul>
                         </li>
                         <li><a href="#news" id="menu_news" target="_blank">Новости</a></li>
@@ -165,7 +217,7 @@
         <h2>горящие туры</h2>
         <div class="row">
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Alania">
                     <div class="img">
                         <img src="img/hotel1.jpg" alt="hotel photo"/>
                     </div>
@@ -178,32 +230,10 @@
                         <span>193 $</span>
                     </div>
                     <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
-                    <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                                <div class="ask-call form">
-                                    <h5>Остались вопросы?</h5>
-                                    <p>Отправьте запрос, и наши менеджеры проведут полную консультацию по отелю,
-                                        расскажут про расписание рейсов и цены</p>
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="InputName" placeholder="Имя">
-                                            <label for="InputName">Как к Вам обращаться</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="InputTelefone" placeholder="Телефон">
-                                            <label for="InputTelefone">Для проведения детальной консультации</label>
-                                        </div>
-                                        <button type="submit">Отправить</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Kemer">
                     <div class="img">
                         <img src="img/hotel2.jpg" alt="hotel photo"/>
                     </div>
@@ -219,7 +249,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Alania">
                     <div class="img">
                         <img src="img/hotel3.jpg" alt="hotel photo"/>
                     </div>
@@ -237,7 +267,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Alania">
                     <div class="img">
                         <img src="img/hotel4.jpg" alt="hotel photo"/>
                     </div>
@@ -254,7 +284,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Alania">
                     <div class="img">
                         <img src="img/hotel5.jpg" alt="hotel photo"/>
                     </div>
@@ -270,7 +300,7 @@
                 </div>
              </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Antalya">
                     <div class="img">
                         <img src="img/hotel6.jpg" alt="hotel photo"/>
                     </div>
@@ -289,7 +319,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Kemer">
                     <div class="img">
                         <img src="img/hotel7.jpg" alt="hotel photo"/>
                     </div>
@@ -305,7 +335,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Sharm-El-Sheikh">
                     <div class="img">
                         <img src="img/hotel8.jpg" alt="hotel photo"/>
                     </div>
@@ -322,7 +352,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col Hurgada">
                     <div class="img">
                         <img src="img/hotel9.jpg" alt="hotel photo"/>
                     </div>
@@ -416,7 +446,7 @@
         <h2>новости</h2>
         <div class="row">
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col open-modal" data-target="#modalOpenNews" data-id="first">
                     <img class="img-responsive" src="img/news_foto_1.jpg" alt="Valensia"/>
                     <p class="data">04.09.2018</p>
                     <h5>Испания: Валенсия станет первой европейской столицей «умного» туризма</h5>
@@ -427,7 +457,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col open-modal" data-target="#modalOpenNews" data-id="second">
                     <img class="img-responsive" src="img/news_foto_2.jpg" alt="Valensia"/>
                     <p class="data">03.09.2018</p>
                     <h5>Опубликован список самых фотографируемых городов 2018 г</h5>
@@ -438,7 +468,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="in-col">
+                <div class="in-col open-modal" data-target="#modalOpenNews" data-id="third">
                     <img class="img-responsive" src="img/news_foto_3.jpg" alt="foto"/>
                     <p class="data">03.09.2018</p>
                     <h5>Реставрация замка Св. Петра в Бодруме будет завершена к лету 2019 г</h5>
@@ -512,6 +542,14 @@
 </div>
 
 <!--modal windows-->
+<div class="modal" id="modalOpenNews">
+    <div class="modal-body">
+        <h2 id="newsName"></h2>
+        <p id="newsData"></p>
+        <p id="newsText"></p>
+        <div><button class="close">Close</button></div>
+    </div>
+</div>
 
 <div class="modal fade bs-dropdownMenuItem-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
@@ -521,12 +559,12 @@
                 <p>и наши менеджеры проведут полную консультацию</p>
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="InputYourName" placeholder="Имя">
-                        <label for="InputYourName">Как к Вам обращаться</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Имя">
+                        <label for="Name">Как к Вам обращаться</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="InputTel" placeholder="Телефон">
-                        <label for="InputTel">Для проведения детальной консультации</label>
+                        <input type="text" class="form-control" id="Tel" placeholder="Телефон">
+                        <label for="Tel">Для проведения детальной консультации</label>
                     </div>
                     <button type="submit">Отправить</button>
                 </form>
@@ -534,7 +572,28 @@
         </div>
     </div>
 </div>
-
+<div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="ask-call form">
+                <h5>Остались вопросы?</h5>
+                <p>Отправьте запрос, и наши менеджеры проведут полную консультацию по отелю,
+                    расскажут про расписание рейсов и цены</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputName" placeholder="Имя">
+                        <label for="InputName">Как к Вам обращаться</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputTelefone" placeholder="Телефон">
+                        <label for="InputTelefone">Для проведения детальной консультации</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
