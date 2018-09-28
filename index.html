@@ -17,9 +17,9 @@
 <header>
     <div class="contacts">
         <div class="container-fluid">
-            <span>г. Запорожье,  пр. Соборний </span>
+            <span>г. Запорожье,  пр. Соборний, 166</span>
             <img src="img/icon_header.png" height="16" width="16" alt=""/>
-            <span>166 099-757-44-07</span>
+            <span>099-757-44-07</span>
             <img src="img/iconmonstr-email.png" height="16" width="16" alt=""/>
             <span> info@t.zp.ua</span>
         </div>
@@ -41,10 +41,10 @@
                 <div class="row">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" id="menu_tours" target="_blank">Экскурсионные туры</a></li>
-                        <li><a href="#" id="menu_countries" target="_blank">Страны</a></li>
+                        <li><a href="#hotTours" id="menu_countries" target="_blank">Города</a></li>
                         <li><a href="#" id="menu_services" target="_blank">Услуги</a></li>
-                        <li><a href="#" id="menu_news" target="_blank">Новости</a></li>
-                        <li><a href="#" id="menu_contacts" target="_blank">Контакты</a></li>
+                        <li><a href="#news" id="menu_news" target="_blank">Новости</a></li>
+                        <li><a href="#contacts" id="menu_contacts" target="_blank">Контакты</a></li>
                     </ul>
                 </div>
         </div>
@@ -58,7 +58,25 @@
                     <h4>турцию</h4>
                 </div>
             </div>
-            <a href="#hotTours">ПОДРОБНЕЕ</a>
+            <button type="button" class="btn btn-info modalBanner" data-toggle="modal" data-target="#myModal">ПОДРОБНЕЕ</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content dispatch">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <img src="img/iconmonstr-x-mark-7-240.png" height="55" width="55" alt="close"/>
+                            </button>
+                        <div class="modal-body">
+                            <h6 class="modal-title">Подписка</h6>
+                            <p>подписка а нашу рассылку</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -149,7 +167,29 @@
                         <i class="ion ion-md-star"></i>
                         <span>193 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
+                    <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="ask-call form">
+                                    <h5>Остались вопросы?</h5>
+                                    <p>Отправьте запрос, и наши менеджеры проведут полную консультацию по отелю,
+                                        расскажут про расписание рейсов и цены</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="InputName" placeholder="Имя">
+                                            <label for="InputName">Как к Вам обращаться</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="InputTelefone" placeholder="Телефон">
+                                            <label for="InputTelefone">Для проведения детальной консультации</label>
+                                        </div>
+                                        <button type="submit">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -165,7 +205,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>197 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -181,7 +221,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>230 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -200,7 +240,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>252 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -216,7 +256,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>376 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
              </div>
             <div class="col-sm-4">
@@ -233,7 +273,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>523 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -251,7 +291,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>527 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -268,7 +308,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>610 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -284,7 +324,7 @@
                         <i class="ion ion-md-star"></i>
                         <span>727 $</span>
                     </div>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">ПОДPОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -335,7 +375,7 @@
             <h2>Мы стремимся быть лучшими на  турическом рынке </h2>
             <p class="main-text">Мы дорожим своей репутацией и строим свою работу таким образом, чтобы все клиенты
                 остались довольны сотрудничеством.</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">ПОДPОБНЕЕ</button>
+            <button class="btn btn-primary light-yelow-btn" data-toggle="modal" data-target=".bs-example-modal-sm">ПОДPОБНЕЕ</button>
             <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
@@ -361,7 +401,7 @@
     </div>
 
 </section>
-<section class="news">
+<section class="news" id="news">
     <div class="container-fluid">
         <h2>новости</h2>
         <div class="row">
@@ -416,7 +456,7 @@
         </div>
     </div>
 </section>
-<footer>
+<footer id="contacts">
     <div class="container-fluid">
         <div class="row">
             <div class="logo col-sm-4">
@@ -482,6 +522,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

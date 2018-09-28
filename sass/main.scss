@@ -75,7 +75,7 @@ header {
     background-color: #4b4b4b;
     span {
       font-size: 16px;
-      line-height: 18px;
+      line-height: 55px;
       color: rgb(255,255,255);
       margin-right: 10px;
     }
@@ -124,7 +124,35 @@ header {
     p {
       font-size: 40px;
     }
-    a {
+    #myModal {
+      .modal-dialog {
+          position: relative;
+          border: none;
+          padding: 0;
+          h6 {
+            text-align: right;
+          }
+          .close {
+            position: absolute;
+            top: -55px;
+            right: -55px;
+
+          }
+        .modal-body {
+          width: 48%;
+          margin-left: 52%;
+        }
+      }
+      .modal-content.dispatch {
+        background: #6dcff6 url("../img/bg_modal_banner.jpg") no-repeat;
+        background-size: contain;
+        max-width: 992px;
+        height: 400px;
+        margin-top: 60px;
+
+      }
+    }
+    .modalBanner {
       width: 200px;
       height: 67px;
       display: block;
@@ -132,7 +160,7 @@ header {
       background-color: #f5cd15;
       font-size: 20px;
       letter-spacing: 2px;
-      line-height: 67px;
+      line-height: 55px;
       color: rgb(0,0,0);
       font-weight: bold;
       text-align: center;
@@ -253,15 +281,16 @@ header {
       margin: 0 auto;
     }
   }
-  a {
+  button.btn {
     width: 167px;
     height: 40px;
     box-shadow: 3.5px 6.062px 1px rgba(34,31,31,0.15);
     background-color: #f5cd15;
-    text-decoration: none;
+    outline: none;
+    border: none;
     font-size: 18px;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 28px;
     color: rgb(0,0,0);
     text-align: center;
     display: block;
@@ -269,7 +298,8 @@ header {
     &:hover {
       background-color: #47cfcb;
       color: rgb(255,255,255);
-      text-decoration: none;
+      outline: none;
+      border: none;
     }
   }
 }
@@ -304,7 +334,53 @@ header {
     color: rgb(118,116,116);
   }
 }
-
+.modal-content {
+  max-width: 475px;
+}
+.ask-call {
+  padding: 25px 45px 45px;
+  form {
+    div {
+      text-align: left;
+      input {
+        border: 1px solid #47cfcb;
+        color: #000000;
+        &:hover {
+          box-shadow: 3.5px 6.062px 1px rgba(71,207,203,0.15);
+        }
+      }
+    }
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #767474;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  button {
+    margin: 0 auto;
+    width: 170px;
+    height: 40px;
+    background-color: #f9d166;
+    line-height: 40px;
+    text-transform: uppercase;
+    display: block;
+  }
+  label {
+    font-size: 12px;
+    line-height: 23px;
+    color: #082a98;
+  }
+}
 .company {
   text-align: right;
   background-image: url("../img/bg_company_foto.jpg");
@@ -314,50 +390,7 @@ header {
     padding: 50px 60px 50px 0;
     background-image: url("../img/yellow_white.png");
     background-size: cover;
-    .modal-content {
-      max-width: 475px;
-    }
-    .ask-call {
-      padding: 25px 45px 45px;
-      form {
-        text-align: left;
-        input {
-          border: 1px solid #47cfcb;
-          color: #000000;
-          &:hover {
-            box-shadow: 3.5px 6.062px 1px rgba(71,207,203,0.15);
-          }
-        }
-      }
-      h5 {
-        font-size: 24px;
-        line-height: 23px;
-        text-transform: uppercase;
-        color: #000000;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      p {
-        font-size: 16px;
-        line-height: 24px;
-        color: #767474;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      button {
-        margin: 0 auto;
-        width: 170px;
-        height: 40px;
-        background-color: #f9d166;
-        line-height: 40px;
-        text-transform: uppercase;
-      }
-      label {
-        font-size: 12px;
-        line-height: 23px;
-        color: #082a98;
-      }
-    }
+
     h2 {
       line-height: 48px;
       color: rgb(132,110,10);
@@ -373,7 +406,7 @@ header {
       margin-left: 20%;
       margin-bottom: 30px;
     }
-    button {
+    .light-yelow-btn {
       outline: none;
       border: none;
       display: block;
@@ -390,7 +423,6 @@ header {
       &:hover {
         background-color: #47cfcb;
         color: rgb(255,255,255);
-        //text-decoration: none;
       }
     }
   }

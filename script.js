@@ -2,16 +2,21 @@ $(document).ready(function(){
     'use strict';
     //    low scroll
 
-    var $page = $('html, body');
-    $('a[href*="#"]').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 900);
-        return false;
+    var $anchors = $('a[href^="#"]');
+    var $button = $ ('button');
+    $button.click(function (e) {
+        e.preventDefault();
+    });
+    $anchors.click(function (e) {
+        e.preventDefault();
+
+        var id = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 800);
     });
 
     //   map
-
 
     function loadMap() {
         var center = new google.maps.LatLng(47.84, 35.14);
@@ -26,7 +31,7 @@ $(document).ready(function(){
             disableDefaultUI: true,
         };
         var infowindow = new google.maps.InfoWindow({
-            content:"My town"
+            content:"пр. Соборний, 166"
         });
 
         google.maps.event.addListener(marker,'click',function() {
@@ -39,7 +44,6 @@ $(document).ready(function(){
     loadMap();
 
     // Modal
-
 
 
     //Isotop
