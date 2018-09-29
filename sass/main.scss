@@ -277,10 +277,6 @@ header {
 }
 .advantages {
   padding: 0;
-  //.carousel-control {
-  //  background: white;
-  //  color: #47cfcb;
-  //}
   .carousel-indicators{
     li {
       border: 1px solid #47cfcb;
@@ -428,10 +424,11 @@ header {
     color: rgb(118,116,116);
   }
 }
-.modal-content {
+.modal-dialog {
   max-width: 475px;
 }
 .ask-call {
+
   padding: 25px 45px 45px;
   form {
     div {
