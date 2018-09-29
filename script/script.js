@@ -9,7 +9,6 @@ $(document).ready(function(){
         e.preventDefault();
     });
     $anchors.click(function (e) {
-        e.preventDefault();
 
         var id = $(this).attr('href');
         $('html, body').animate({
@@ -133,6 +132,78 @@ $(document).ready(function(){
             console.debug(this);
         }
     });
+
+    //AJAX hotels photo
+
+    var hotelCoord, url, idHotel, obj, urlFoto, hotelCity, hotelName;
+
+    $('.hotelsReq button').click(function () {
+        hotelCoord = $(this).data('hotel');
+
+        ajaxReq ();
+        getIdHotel();
+        ajaxReqFoto ()
+    });
+
+    function ajaxReq () {
+        url = 'http://engine.hotellook.com/api/v2/lookup.json?query=' + hotelCoord + '&lang=ru&lookFor=both&limit=1';
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, false);
+        xhr.send();
+        obj = JSON.parse(xhr.responseText);
+    }
+
+function getIdHotel() {
+    var result = obj.results;
+    var hotel = result.hotels;
+    var location = result.locations;
+    hotelCity = location[0].fullname;
+    console.log (hotelCity);
+    idHotel = hotel[0].id;
+    hotelName = hotel[0].name;
+    console.log (hotelName)
+    document.getElementById('hotelCity').innerHTML = '<span>' + hotelCity + '</span>';
+    document.getElementById('hotelName').innerHTML = '<span>' + hotelName + '</span>';
+    }
+
+    function ajaxReqFoto () {
+        urlFoto = 'http://photo.hotellook.com/rooms/sprite/h' + idHotel + '_1/100/3/50.auto';
+        document.getElementById('fotoHotelAjax').innerHTML = '<img src="' + urlFoto + '">';
+    }
+
+
+//sprite
+    // http://photo.hotellook.com/rooms/sprite/h4_1/100/3/50.auto
+
+
+    // xhr.onreadystatechange = function() {
+    //
+    //     var newsName, newsText, newsData;
+    //     for (var i = 0; i < obj.length; i++) {
+    //         if (obj[i].id == newsId) {
+    //             newsName = baseNews[i].header;
+    //             newsData = baseNews[i].data;
+    //             newsText = baseNews[i].text;
+    //         }
+    //     }
+    //     document.getElementById('newsName').innerHTML = newsName;
+    //     document.getElementById('newsText').innerHTML = newsText;
+    //     document.getElementById('newsData').innerHTML = newsData;
+    // }
+
+
+    // xhr.onreadystatechange();
+
+    // http://engine.hotellook.com/api/v2/lookup.json?query=moscow&lang=ru&lookFor=both&limit=1
+
+//     Запрос «Фотография города»
+//
+// Чтобы получить фотографию города, используйте запрос вида:
+//
+//         https://photo.hotellook.com/static/cities/960x720/LED.jpg
+
+            // где 960x720 — размер фотографии, LED — IATA код города.
 
     //Base
     var baseNews = [

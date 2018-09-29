@@ -348,6 +348,26 @@ header {
     font-weight: 800;
   }
 }
+.hotels_modal {
+  #hotelName {
+    margin: 0 auto;
+    border: none;
+    span {
+      font-size: 25px;
+    }
+  }
+  span {
+    font-size: 23px;
+  }
+  p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal-content {
+    padding: 20px;
+  }
+}
 .hotels {
   text-align: center;
   background: url("../img/bg_hotels.png") no-repeat;
@@ -610,8 +630,9 @@ header {
      background: white;
      padding: 30px;
      h2 {
+       width: 80%;
        border: none;
-       margin-bottom: 30px;
+       margin: 0 auto 30px;
        font-size: 20px;
      }
      p {
