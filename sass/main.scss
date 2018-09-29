@@ -75,6 +75,23 @@ div.img_round {
     max-height: 70px;
   }
 }
+.height122px {
+  height: 122px;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  .bg {
+    background-color: #fbffb7;
+    height: 100%;
+    width: 130px;
+    margin: 0 auto;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
 .dropdown-menu {
   width: 273px;
   box-shadow: 4px 6.928px 3px rgba(0,0,0,0.14);
@@ -425,7 +442,7 @@ header {
   }
 }
 .modal-dialog {
-  max-width: 475px;
+  max-width: 992px;
 }
 .ask-call {
 
@@ -476,6 +493,10 @@ header {
   text-align: right;
   background-image: url("../img/bg_company_foto.jpg");
   background-size: cover;
+  .container-fluid {
+    max-width: 100%;
+    width: 100%;
+  }
   .target {
     text-align: center;
     padding: 50px 60px 50px 0;
