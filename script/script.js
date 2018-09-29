@@ -173,38 +173,6 @@ function getIdHotel() {
     }
 
 
-//sprite
-    // http://photo.hotellook.com/rooms/sprite/h4_1/100/3/50.auto
-
-
-    // xhr.onreadystatechange = function() {
-    //
-    //     var newsName, newsText, newsData;
-    //     for (var i = 0; i < obj.length; i++) {
-    //         if (obj[i].id == newsId) {
-    //             newsName = baseNews[i].header;
-    //             newsData = baseNews[i].data;
-    //             newsText = baseNews[i].text;
-    //         }
-    //     }
-    //     document.getElementById('newsName').innerHTML = newsName;
-    //     document.getElementById('newsText').innerHTML = newsText;
-    //     document.getElementById('newsData').innerHTML = newsData;
-    // }
-
-
-    // xhr.onreadystatechange();
-
-    // http://engine.hotellook.com/api/v2/lookup.json?query=moscow&lang=ru&lookFor=both&limit=1
-
-//     Запрос «Фотография города»
-//
-// Чтобы получить фотографию города, используйте запрос вида:
-//
-//         https://photo.hotellook.com/static/cities/960x720/LED.jpg
-
-            // где 960x720 — размер фотографии, LED — IATA код города.
-
     //Base
     var baseNews = [
         {
