@@ -290,7 +290,6 @@ header {
         background-color: #47cfcb;
         color: rgb(255,255,255);
         text-decoration: none;
-
       }
     }
   }
@@ -592,6 +591,7 @@ header {
   .in-col {
     height: 450px;
     text-align: left;
+    cursor: pointer;
     .text_news {
       font-size: 14px;
       line-height: 18px;
