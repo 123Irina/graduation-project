@@ -3,13 +3,13 @@ $(document).ready(function(){
     'use strict';
     //    low scroll
 
-    var $anchors = $('a');
+    var $anchors = $('a[href^="#"]').not('[href="#"]');
     var $button = $ ('button');
     $button.click(function (e) {
         e.preventDefault();
     });
     $anchors.click(function (e) {
-
+        e.preventDefault();
         var id = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(id).offset().top
