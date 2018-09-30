@@ -39,7 +39,7 @@ gulp.task('style', function() {
 });
 
 gulp.task('script', function() {
-    return gulp.src('script/script.js')
+    return gulp.src('script/base.js, script.js')
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('js/'))
