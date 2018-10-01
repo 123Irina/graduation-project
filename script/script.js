@@ -89,7 +89,7 @@ $(document).ready(function(){
     $('.timer_500').countTo({
         from: 0,
         to: 500,
-        speed: 1500,
+        speed: 6500,
         refreshInterval: 50,
         formatter: function (value, options) {
             return value.toFixed(options.decimals);
@@ -105,8 +105,8 @@ $(document).ready(function(){
     $('.timer_700').countTo({
         from: 0,
         to: 700,
-        speed: 1500,
-        refreshInterval: 50,
+        speed: 6500,
+        refreshInterval: 200,
         formatter: function (value, options) {
             return value.toFixed(options.decimals);
         },
@@ -120,7 +120,7 @@ $(document).ready(function(){
     $('.timer_2000').countTo({
         from: 0,
         to: 2000,
-        speed: 1500,
+        speed: 6500,
         refreshInterval: 50,
         formatter: function (value, options) {
             return value.toFixed(options.decimals);
