@@ -59,6 +59,10 @@ h2 {
     box-shadow: 8.045px 7.502px 7px rgba(0,0,0,0.25);
   }
 }
+.navbar-collapse {
+  overflow-x: hidden;
+  border-top: none;
+}
 div.img_round {
   height: 124px;
   width: 124px;
