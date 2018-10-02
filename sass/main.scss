@@ -94,8 +94,6 @@ div.img_round {
   a {
     display: block;
     width: 100%;
-  }
-  img {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -473,7 +471,7 @@ header {
   max-width: 992px;
 }
 .ask-call {
-
+  overflow-y: scroll;
   padding: 25px 45px 45px;
   form {
     div {
